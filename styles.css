@@ -9,15 +9,6 @@ body {
     height: 100vh;
 }
 
-.container {
-    width: 80%;
-    max-width: 800px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 form {
     display: flex;
     flex-direction: column;
