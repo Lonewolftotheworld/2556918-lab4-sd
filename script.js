@@ -48,7 +48,7 @@ document.getElementById('submit-country').addEventListener('click', function () 
                         });
                 });
             } else {
-                borderList.innerHTML = '<p>.</p>';
+                borderList.innerHTML = '<p>Error retrieving country data</p>';
             }
         })
         .catch(error => {
