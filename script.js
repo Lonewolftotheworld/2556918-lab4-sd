@@ -21,12 +21,11 @@ document.getElementById('submit-country').addEventListener('click', function () 
 
     
             document.getElementById('country-details').innerHTML = `
-                <strong>Country Name:</strong> ${country.name.common}<br>
                 <strong>Capital:</strong> ${capital}<br>
                 <strong>Region:</strong> ${region}<br>
                 <strong>Population:</strong> ${population}<br>
                 <strong>Flag:</strong><br>
-                <img src="${flag}" alt="${country.name.common} flag" width="200px">
+                <img src="${flag}" alt="${country.name.common} flag" width="400px">
             `;
 
             
@@ -42,7 +41,7 @@ document.getElementById('submit-country').addEventListener('click', function () 
 
                             borderList.innerHTML += `
                                 <p>
-                                    <img src="${borderFlag}" alt="${borderName} flag" width="30px">
+                                    <img src="${borderFlag}" alt="${borderName} flag" width="200px">
                                     ${borderName}
                                 </p>
                             `;
