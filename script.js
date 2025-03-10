@@ -41,7 +41,7 @@ document.getElementById('submit-country').addEventListener('click', function () 
 
                             borderList.innerHTML += `
                                 <p>
-                                    <img src="${borderFlag}" alt="${borderName} flag" width="300px">
+                                    <img src="${borderFlag}" alt="${borderName} flag" width="200px">
                                     ${borderName}
                                 </p>
                             `;
