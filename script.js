@@ -25,7 +25,7 @@ document.getElementById('submit-country').addEventListener('click', function () 
                 <strong>Region:</strong> ${region}<br>
                 <strong>Population:</strong> ${population}<br>
                 <strong>Flag:</strong><br>
-                <img src="${flag}" alt="${country.name.common} flag" width="200px">
+                <img src="${flag}" alt="${country.name.common} flag" width="50px">
             `;
 
             
