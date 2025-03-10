@@ -7,7 +7,7 @@ document.getElementById('submit-country').addEventListener('click', function () 
     }
 
     document.getElementById('country-details').innerHTML = '';
-    document.getElementById('border-list').innerHTML = 'No bordering countries yet.';
+    document.getElementById('border-list').innerHTML = '';
 
     fetch(`https://restcountries.com/v3.1/name/${countryName}`)
         .then(response => response.json())
@@ -41,14 +41,14 @@ document.getElementById('submit-country').addEventListener('click', function () 
 
                             borderList.innerHTML += `
                                 <p>
-                                    <img src="${borderFlag}" alt="${borderName} flag" width="200px">
+                                    <img src="${borderFlag}" alt="${borderName} flag" width="300px">
                                     ${borderName}
                                 </p>
                             `;
                         });
                 });
             } else {
-                borderList.innerHTML = '<p>No bordering countries.</p>';
+                borderList.innerHTML = '<p>.</p>';
             }
         })
         .catch(error => {
